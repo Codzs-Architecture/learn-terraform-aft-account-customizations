@@ -1,8 +1,8 @@
 module "cloudwatch_logs_retention_sandbox" {
   source                = "../../shared_module/cloudwatch_log_retention"
-  retention_days_target = 90
-  retention_days_min    = 30
-  retention_days_max    = 400
+  retention_days_target = 1
+  retention_days_min    = 1
+  retention_days_max    = 7
   discover_regions      = "false"
   # dry_run               = "false"
   # regex_match           = ""
