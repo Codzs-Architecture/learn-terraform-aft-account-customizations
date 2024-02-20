@@ -1,5 +1,7 @@
 module "cloudwatch_logs_retention_network_nonproduction001" {
-  source                = "../../shared_module/cloudwatch_log_retention"
+  source  = "Codzs-Architecture/cloudwatch-log-retention/aws"
+  version = "0.0.1"
+  
   retention_days_target = 30
   retention_days_min    = 30
   retention_days_max    = 90

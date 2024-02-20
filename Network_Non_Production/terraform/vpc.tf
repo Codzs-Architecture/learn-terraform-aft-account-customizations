@@ -1,6 +1,6 @@
 module "vpc_network_non_production" {
   source  = "Codzs-Architecture/vpc-impl/aws"
-  version = "0.0.7"
+  version = "0.0.8"
 
-  account = "Network_Non_Production"
+  account_customizations_name = "${local.account_customizations_name}"
 }
