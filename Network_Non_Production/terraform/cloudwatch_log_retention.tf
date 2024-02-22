@@ -1,6 +1,6 @@
 module "cloudwatch_logs_retention_network_nonproduction001" {
   source  = "Codzs-Architecture/cloudwatch-log-retention/aws"
-  version = "0.0.6"
+  version = "0.0.7"
   
   retention_days_target = 1
   retention_days_min    = 1
