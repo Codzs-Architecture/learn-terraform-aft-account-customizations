@@ -1,4 +1,4 @@
-module "vpc_network_non_production" {
+module "vpc_network_production" {
   source  = "Codzs-Architecture/vpc-impl/aws"
   version = "0.0.16"
 

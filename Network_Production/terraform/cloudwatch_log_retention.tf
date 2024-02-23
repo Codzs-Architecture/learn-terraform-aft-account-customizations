@@ -1,4 +1,4 @@
-module "cloudwatch_logs_retention_network_nonproduction001" {
+module "cloudwatch_logs_retention_network_production001" {
   source  = "Codzs-Architecture/cloudwatch-log-retention/aws"
   version = "0.0.9"
   
@@ -12,4 +12,6 @@ module "cloudwatch_logs_retention_network_nonproduction001" {
   schedule_expression   = "rate(23 hours)"
   delete_empty_days     = 600
   environment           = "np"
+
+  depends_on = [module.module.vpc_network_production]
 }
