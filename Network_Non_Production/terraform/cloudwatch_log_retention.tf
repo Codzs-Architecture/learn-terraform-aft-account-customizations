@@ -13,5 +13,5 @@ module "cloudwatch_logs_retention_network_nonproduction001" {
   delete_empty_days     = 600
   environment           = "np"
 
-  depends_on = [module.module.vpc_network_non_production]
+  depends_on = [module.vpc_network_non_production]
 }
