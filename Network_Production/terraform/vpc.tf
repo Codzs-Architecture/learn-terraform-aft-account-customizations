@@ -1,6 +1,6 @@
-# module "vpc_network_production" {
-#   source  = "Codzs-Architecture/vpc-impl/aws"
-#   version = "0.0.11"
+module "vpc_network_non_production" {
+  source  = "Codzs-Architecture/vpc-impl/aws"
+  version = "0.0.16"
 
-#   account_customizations_name = "${local.account_customizations_name}"
-# }
+  account_customizations_name = "${local.account_customizations_name}"
+}
